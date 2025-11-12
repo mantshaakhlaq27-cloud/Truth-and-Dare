@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:elevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical">
+
+        <!-- Rank -->
+        <TextView
+            android:id="@+id/tvRank"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="🥇"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:layout_marginEnd="12dp"/>
+
+        <!-- Player Emoji -->
+        <TextView
+            android:id="@+id/tvPlayerEmoji"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="😀"
+            android:textSize="28sp"
+            android:gravity="center"
+            android:layout_marginEnd="12dp"/>
+
+        <!-- Player Info -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvPlayerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Player Name"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#4E342E"/>
+
+            <TextView
+                android:id="@+id/tvPlayerStats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✅ 5 completed | ⏭ 2 skipped"
+                android:textSize="12sp"
+                android:textColor="#666666"
+                android:layout_marginTop="2dp"/>
+
+        </LinearLayout>
+
+        <!-- Score -->
+        <TextView
+            android:id="@+id/tvPlayerScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100 pts"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FF6F00"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

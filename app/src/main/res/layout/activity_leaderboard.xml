@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF8E1"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvLeaderboardTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🏆 LEADERBOARD"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#E65100"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Team Winner (if team mode) -->
+    <TextView
+        android:id="@+id/tvTeamWinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🏆 Team A Wins!"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#1976D2"
+        android:gravity="center"
+        android:background="#E3F2FD"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone"/>
+
+    <!-- Winner Card -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:elevation="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFD700"
+            android:padding="16dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🎉 WINNER 🎉"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#4E342E"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tvWinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="👑 Player Name\n100 points"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#4E342E"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Leaderboard List -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📊 Full Rankings"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#4E342E"
+        android:layout_marginBottom="8dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvLeaderboard"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Close Button -->
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CLOSE"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:backgroundTint="#FF5722"
+        android:padding="16dp"/>
+
+</LinearLayout>

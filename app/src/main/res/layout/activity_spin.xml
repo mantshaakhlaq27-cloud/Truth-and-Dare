@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#8D6E63"
+    android:padding="16dp">
+
+    <!-- Top Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Difficulty Display -->
+        <TextView
+            android:id="@+id/tvDifficulty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⚡ Medium Mode"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFEB3B"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Team Scores -->
+        <TextView
+            android:id="@+id/tvTeamScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Team A: 0 | Team B: 0"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone"/>
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Spin the Bottle!"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Bottle Container with Effects -->
+        <FrameLayout
+            android:id="@+id/bottleContainer"
+            android:layout_width="280dp"
+            android:layout_height="280dp">
+
+
+
+            <!-- Sparkle 1 -->
+            <ImageView
+                android:id="@+id/ivSparkle1"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="top|start"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/sparkle"
+                android:alpha="0"
+                android:contentDescription="Sparkle"/>
+
+            <!-- Sparkle 2 -->
+            <ImageView
+                android:id="@+id/ivSparkle2"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="top|end"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/sparkle"
+                android:alpha="0"
+                android:contentDescription="Sparkle"/>
+
+            <!-- Sparkle 3 -->
+            <ImageView
+                android:id="@+id/ivSparkle3"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="bottom|start"
+                android:layout_marginStart="40dp"
+                android:layout_marginBottom="30dp"
+                android:src="@drawable/sparkle"
+                android:alpha="0"
+                android:contentDescription="Sparkle"/>
+
+            <!-- Sparkle 4 -->
+            <ImageView
+                android:id="@+id/ivSparkle4"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/sparkle"
+                android:alpha="0"
+                android:contentDescription="Sparkle"/>
+
+            <!-- The Bottle (centered) -->
+            <ImageView
+                android:id="@+id/ivBottle"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:src="@drawable/bottle"
+                android:contentDescription="Spinning Bottle"/>
+
+        </FrameLayout>
+
+        <!-- Selected Player -->
+        <TextView
+            android:id="@+id/tvSelectedPlayer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="It's Player's turn!"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFEB3B"
+            android:gravity="center"
+            android:visibility="gone"/>
+
+        <!-- Power-Up Display -->
+        <TextView
+            android:id="@+id/tvPowerUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="⭐ Power-Up Earned!"
+            android:textSize="14sp"
+            android:textColor="#FFD700"
+            android:gravity="center"
+            android:background="#40000000"
+            android:padding="8dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <!-- Truth and Dare Buttons -->
+    <LinearLayout
+        android:id="@+id/truthDareButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="12dp">
+
+        <Button
+            android:id="@+id/btnTruth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="TRUTH"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="#2196F3"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btnDare"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:text="DARE"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="#F44336"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <!-- Bottom Buttons -->
+    <Button
+        android:id="@+id/btnViewLeaderboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🏆 VIEW LEADERBOARD"
+        android:textSize="16sp"
+        android:backgroundTint="#FFC107"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnSpin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="✨ SPIN THE BOTTLE ✨"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:backgroundTint="#FF9800"
+        android:padding="16dp"/>
+
+</LinearLayout>

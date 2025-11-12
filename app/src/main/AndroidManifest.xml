@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Truth or Dare"
+        android:theme="@style/AppTheme">
+
+        <!-- Splash Activity - FIRST SCREEN -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Main Activity - Player Setup -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"/>
+
+        <!-- Spin Activity -->
+        <activity
+            android:name=".SpinActivity"
+            android:exported="false"/>
+
+        <!-- Truth Dare Activity -->
+        <activity
+            android:name=".TruthDareActivity"
+            android:exported="false"/>
+
+        <!-- Leaderboard Activity -->
+        <activity
+            android:name=".LeaderboardActivity"
+            android:exported="false"/>
+
+    </application>
+
+</manifest>

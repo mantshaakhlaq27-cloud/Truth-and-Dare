@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- strings.xml - String Resources -->
+<resources>
+    <string name="app_name">Truth or Dare</string>
+
+    <!-- Main Activity -->
+    <string name="title_main">Truth or Dare</string>
+    <string name="subtitle_main">Add 2–8 Players</string>
+    <string name="hint_player_name">Enter player name</string>
+    <string name="btn_add_player">Add</string>
+    <string name="btn_start_game">Start Game</string>
+    <string name="label_players_list">Players (tap to remove):</string>
+
+    <!-- Spin Activity -->
+    <string name="title_spin">Spin the Bottle!</string>
+    <string name="btn_spin">SPIN THE BOTTLE</string>
+    <string name="text_player_turn">It\'s %s\'s turn!</string>
+    <string name="btn_truth">TRUTH</string>
+    <string name="btn_dare">DARE</string>
+
+    <!-- Truth Dare Activity -->
+    <string name="text_player_name_turn">%s\'s Turn</string>
+    <string name="type_truth">TRUTH</string>
+    <string name="type_dare">DARE</string>
+    <string name="btn_next_round">NEXT ROUND</string>
+
+    <!-- Toast Messages -->
+    <string name="toast_enter_name">Please enter a player name</string>
+    <string name="toast_max_players">Maximum 8 players allowed</string>
+    <string name="toast_duplicate_name">Player name already exists</string>
+    <string name="toast_player_added">%s added!</string>
+    <string name="toast_min_players">Add at least 2 players to start</string>
+</resources>

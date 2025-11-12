@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ECEFF1"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <!-- Player Name -->
+    <TextView
+        android:id="@+id/tvPlayerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="😀 Player's Turn"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#37474F"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Power-Up Info -->
+    <TextView
+        android:id="@+id/tvPowerUpInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🎁 Active Power-Up"
+        android:textSize="14sp"
+        android:textColor="#FF9800"
+        android:gravity="center"
+        android:background="#FFF3E0"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone"/>
+
+    <!-- Truth or Dare Type -->
+    <TextView
+        android:id="@+id/tvType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="❓ TRUTH"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="#2196F3"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"
+        android:paddingHorizontal="32dp"
+        android:paddingVertical="12dp"
+        android:background="@android:drawable/dialog_holo_light_frame"/>
+
+    <!-- Question Card -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:elevation="8dp">
+
+        <TextView
+            android:id="@+id/tvQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What's your biggest fear?"
+            android:textSize="20sp"
+            android:textColor="#263238"
+            android:gravity="center"
+            android:padding="32dp"
+            android:lineSpacingExtra="4dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Action Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Completed Button -->
+        <Button
+            android:id="@+id/btnCompleted"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="✅ COMPLETED"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="#4CAF50"
+            android:padding="16dp"/>
+
+        <!-- Skipped Button -->
+        <Button
+            android:id="@+id/btnSkipped"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:text="⏭ SKIP"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="#FF5722"
+            android:padding="16dp"/>
+
+    </LinearLayout>
+
+    <!-- Points Info -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="💡 Complete to earn points!"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:gravity="center"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

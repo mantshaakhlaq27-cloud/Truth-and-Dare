@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- colors.xml - Color Resources -->
+<resources>
+    <!-- Primary Colors -->
+    <color name="colorPrimary">#FF6F00</color>
+    <color name="colorPrimaryDark">#E65100</color>
+    <color name="colorAccent">#FF9800</color>
+
+    <!-- Background Colors -->
+    <color name="background_main">#FFF3E0</color>
+    <color name="background_spin">#8D6E63</color>
+    <color name="background_truth_dare">#ECEFF1</color>
+
+    <!-- Button Colors -->
+    <color name="button_add">#FF6F00</color>
+    <color name="button_start">#4CAF50</color>
+    <color name="button_spin">#FF9800</color>
+    <color name="button_truth">#2196F3</color>
+    <color name="button_dare">#F44336</color>
+    <color name="button_next">#4CAF50</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#4E342E</color>
+    <color name="text_secondary">#BF360C</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_selected_player">#FFEB3B</color>
+
+    <!-- Other -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>
