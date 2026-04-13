@@ -72,57 +72,6 @@ An interactive and feature-rich **Truth or Dare** mobile game built with **Kotli
 
 ---
 
-## 📂 Project Structure
-TruthOrDareApp/
-│
-├── app/
-│   ├── manifests/
-│   │   └── AndroidManifest.xml
-│   │
-│   ├── java/com/example/truthordareapp/
-│   │   ├── Activities/
-│   │   │   ├── SplashActivity.kt
-│   │   │   ├── MainActivity.kt
-│   │   │   ├── SpinActivity.kt
-│   │   │   ├── TruthDareActivity.kt
-│   │   │   └── LeaderboardActivity.kt
-│   │   │
-│   │   ├── Adapters/
-│   │   │   ├── EnhancedPlayerAdapter.kt
-│   │   │   └── LeaderboardAdapter.kt
-│   │   │
-│   │   ├── Models/
-│   │   │   ├── Player.kt
-│   │   │   ├── PowerUp.kt
-│   │   │   └── BottleSkin.kt
-│   │   │
-│   │   └── Data/
-│   │       └── DataProvider.kt
-│   │
-│   └── res/
-│       ├── layout/
-│       │   ├── activity_splash.xml
-│       │   ├── activity_main.xml
-│       │   ├── activity_spin.xml
-│       │   ├── activity_truth_dare.xml
-│       │   ├── activity_leaderboard.xml
-│       │   ├── item_player_enhanced.xml
-│       │   └── item_leaderboard.xml
-│       │
-│       ├── drawable/
-│       │   ├── bottle.xml
-│       │   ├── glow_ring.xml
-│       │   ├── spin_trail.xml
-│       │   ├── sparkle.xml
-│       │   └── particle.xml
-│       │
-│       └── values/
-│           ├── colors.xml
-│           ├── strings.xml
-│           └── styles.xml
-
----
-
 ## 🎮 How to Use
 
 ### Adding Players
