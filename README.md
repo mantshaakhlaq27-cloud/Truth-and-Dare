@@ -9,12 +9,6 @@ An interactive and feature-rich **Truth or Dare** mobile game built with **Kotli
 
 ---
 
-## 📱 Screenshots
-
-> Add your app screenshots here
-
----
-
 ## ✨ Features
 
 ### 🎭 Core Features
@@ -226,19 +220,10 @@ Contributions are welcome! Please follow these steps:
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
 ## 👨‍💻 Author
 
-**Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your Profile](https://linkedin.com/in/yourprofile)
-- Email: your.email@example.com
-
+Mantsha Akhlaq
+ 
 ---
 
 ## 🙏 Acknowledgments
@@ -247,26 +232,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Vector graphics created using Android Vector Drawable tools
 - Icons and design inspiration from Material Design guidelines
 - Special thanks to the Android development community
-
----
-
-## 📸 Demo Video
-
-> Add a link to your demo video here (YouTube/Google Drive)
-
----
-
-## ⭐ Show Your Support
-
-Give a ⭐️ if you like this project!
-
----
-
-## 📞 Contact & Support
-
-For questions or support:
-- Open an issue on GitHub
-- Email: your.email@example.com
 
 ---
 
